@@ -78,7 +78,7 @@ public class ImageHider
                 int green = (clr & 0x0000ff00) >> 8;
                 int blue = clr & 0x000000ff;
 
-                if (alpha%2==0) {red+=1;}
+                if (alpha%2==0) {alpha+=1;}
                 if (red%2==0) {red+=1;}
                 if (green%2==0) {green+=1;}
                 if (blue%2==0) {blue+=1;}
