@@ -30,10 +30,8 @@ public class ImageHider
 
         BufferedImage image = ImageIO.read(file);
 
-        BufferedImage newImage = alterPixel(image, rfile, gfile, bfile, afile);
-
         File f = new File(path + "/encodedimage.png");
-        ImageIO.write(newImage, "PNG", f);
+        ImageIO.write(alterPixel(image, rfile, gfile, bfile, afile), "PNG", f);
     }
 
     public static void decode() throws IOException
@@ -106,7 +104,7 @@ public class ImageHider
         return newImage;
     }
 
-    public static BufferedImage[] restorePixel(BufferedImage image, BufferedImage rimage, BufferedImage bimage, BufferedImage gimage, BufferedImage aimage)
+    public static BufferedImage[] restorePixel(BufferedImage image, BufferedImage rimage, BufferedImage gimage, BufferedImage bimage, BufferedImage aimage)
     {
         for (int x = 0; x<image.getWidth();x++)
         {
@@ -129,6 +127,6 @@ public class ImageHider
                 if (alpha%2==0) {aimage.setRGB(x,y, 0xffffffff);}
             }
         }
-        return new BufferedImage[] {rimage,bimage,gimage,aimage};
+        return new BufferedImage[] {rimage,gimage,bimage,aimage};
     }
 }
