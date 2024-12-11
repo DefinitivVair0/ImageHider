@@ -28,16 +28,16 @@ ImageHider uses the color information of pixels to hide a b/w image.
 >- decreasing file sizes to the minimum needed to store all information
 
 # Example:
-![Unaltered Image](https://ibb.co/1QYG3YZ)
+Unaltered Image: https://ibb.co/1QYG3YZ
 
-![Encoded Image](https://ibb.co/VpvPXnX)
+Encoded Image: https://ibb.co/VpvPXnX
 >Encoded image shows only slight differences in brightness when looking close enough
 
-![r decoded Image](https://ibb.co/9T5ndWw)
+R decoded Image https://ibb.co/9T5ndWw
 >Slight gradients can destroy edges -> will be fixed
 
-![g decoded Image](https://ibb.co/m6tvSm7)
+G decoded Image https://ibb.co/m6tvSm7
 
-![b decoded Image](https://ibb.co/f0qsw0F)
+B decoded Image https://ibb.co/f0qsw0F
 
-![a decoded Image](https://ibb.co/m47hpXM)
+A decoded Image https://ibb.co/m47hpXM
